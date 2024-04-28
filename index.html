@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Employee Management System</h1>
+  <div id="filters">
+    <label for="departmentFilter">Filter by Department:</label>
+    <select id="departmentFilter">
+      <option value="">--Select Department--</option>
+      <option value="hr">HR</option>
+      <option value="finance">Finance</option>
+      <option value="marketing">Marketing</option>
+      <option value="engineering">Engineering</option>
+      <option value="operations">Operations</option>
+    </select>
+    <label for="genderFilter">Filter by Gender:</label>
+    <select id="genderFilter">
+      <option value="">--Select Gender--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="others">Others</option>
+    </select>
+    <label for="sortBy">Sort by Salary:</label>
+    <select id="sortBy">
+      <option value="">--Select order--</option>
+      <option value="asc">Low to High</option>
+      <option value="desc">High to Low</option>
+    </select>
+  </div>
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody id="employeeData">
+      <!-- Employee data will be populated here -->
+    </tbody>
+  </table>
+  <div id="pagination">
+    <button id="prevBtn" disabled>Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
